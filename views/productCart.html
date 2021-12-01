@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/productCart.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Carrito de Compras</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+          <a href="./index"><img src="images/header-assets/logo.svg" alt="logoTuringTech" id="header__logo"></a>
+          <form action="#" method="get" class="header__form">
+              <input type="text" name="search-bar" id="search-bar" class="header__search" placeholder="Buscar...">
+              <button type="submit" class="header__lupa"><img src="images/header-assets/lupa.svg" alt="lupa"></button>
+          </form>
+          <div class="header__container-user-car">
+              <a href="./login"><img src="images/header-assets/user.svg" alt="usuario" id="header__user"></a>
+              <img src="images/header-assets/carrito.svg" alt="carrito" id="header__car">
+          </div>
+      </div>
+
+      <nav id="header__nav">
+          <ul class="nav__ul">
+              <li class="nav__li"><a href="productos" class="nav__a">Productos</a></li>
+              <li class="nav__li"><a href="#" class="nav__a">Mi cuenta</a></li>
+              <li class="nav__li"><a href="ayuda" class="nav__a">Ayuda</a></li>
+              <li class="nav__li"><a href="#" class="nav__a">Encontrá tu equipo</a></li>
+          </ul>
+      </nav>
+
+  </header>
+
+    <main>
+      <section class="main__container">
+        <div class="contenedor-compras1">  
+          <img class="imagen-procesador" src="images/productCart-assets/imagen.png">
+          <p>Procesador AMD Ryzen 5 1600 AF Zen+ 12nm AM4 Wraith Stealth Cooler </p>
+          <input class="ingreso"> </input>  <button class="boton"> Añadir al carrito </button> 
+          <p>20.500</p>
+        </div>
+
+        <div class="contenedor-compras2">  
+          <img class="imagen-procesador" src="images/productCart-assets/core.png">
+          <p>Procesador Intel Core i7 9700F 4.7GHz Turbo 1151 Coffee Lake </p>
+          <input class="ingreso"> </input>  <button class="boton"> Añadir al carrito </button> 
+          <p>34.800</p>
+        </div>
+
+        <div class="contenedor-compras3">  
+          <img class="imagen-procesador" src="images/productCart-assets/ryzen.png">
+          <p>Procesador AMD RYZEN 7 3700X 4.4 GHz AM4 Wraith Prism RGB Led Cooler 
+          </p>
+          <input class="ingreso"> </input>  <button class="boton"> Añadir al carrito <button>
+          <p>20.500</p>
+        </div>
+
+        <div class="contenedor-envios">
+          <div class="oca"> 
+          <label for="">Correo Oca: </label> 
+          <input type="radio" name="precio" value="a"> Domicilio 
+          <input type="radio" name="precio" value="a"> Sucursal 
+          </div>
+      
+          <div class="andreani"> 
+          <label for="">Correo Andreani: </label> 
+          <input type="radio" name="precio" value="a"> Domicilio
+          <input type="radio" name="precio" value="a"> Sucursal
+          </div>
+
+          <div class="mensajeria"> 
+            <label for="">Mensajería: </label> 
+            <input type="radio" name="precio" value="a"> Domicilio 
+          </div>
+
+          <div class="codigo-postal">
+            <p> Código postal: </p> 
+            <input class="direccion"
+            type="text"
+            name="ingreso"
+            id="ingreso"
+            placeholder="Ingrese código postal"
+            />
+          </div>
+        </div>
+
+        <div class="promociones"> 
+          <input class="promocion"
+          type="text"
+          name="ingreso"
+          id="ingreso"
+          placeholder="Ingresar código de descuento">
+          <img src="images/productCart-assets/descuento.png" id="imagen-descuento">
+          
+          <button> ACEPTAR </button>
+        </div>
+
+        <div class="contenedor-pagos">
+          <div class="pago-contado"> 
+          <label for="">Pago contado: </label> 
+          <input type="radio" name="precio" value="a"> Deposito 
+          <input type="radio" name="precio" value="a"> Transferencia 
+          </div>
+      
+          <div class="pago-en-cuotas"> 
+          <label for="">Pago en cuotas: </label> 
+          <input type="radio" name="precio" value="a"> Tarjetas
+          <input type="radio" name="precio" value="a"> Mercado Pago
+          </div>
+
+          <div class="total"> 
+            <p> Total: $120.477</p>
+          </div>
+        </div>
+
+      </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__brands">
+        <img
+          src="images/brands-assets/hyperx.png"
+          alt="hyperxLogo"
+          id="hyperx"
+        />
+        <img
+          src="images/brands-assets/gigabyte.png"
+          alt="gigabyteLogo"
+          id="gigabyte"
+        />
+        <img src="images/brands-assets/msi.png" alt="msiLogo" id="msi" />
+        <img src="images/brands-assets/asus.png" alt="asusLogo" id="asus" />
+        <img
+          src="images/brands-assets/seagate.png"
+          alt="seagateLogo"
+          id="seagate"
+        />
+        <img
+          src="images/brands-assets/thermal.png"
+          alt="thermalLogo"
+          id="thermal"
+        />
+        <img
+          src="images/brands-assets/nvidia.png"
+          alt="nvidiaLogo"
+          id="nvidia"
+        />
+      </div>
+
+      <div class="footer__container">
+        <div class="footer__work">
+          <p class="footer__work-p">Trabajá con nosotros</p>
+          <img
+            src="images/footer-assets/qr.png"
+            alt="qr código"
+            id="footer__work-img"
+          />
+        </div>
+
+        <div class="footer__contact">
+          <p class="footer__contact-p">Nuestras redes sociales</p>
+          <div class="footer__contact-imgs">
+            <a href="#"
+              ><img src="images/footer-assets/fb.svg" alt="facebook"
+            /></a>
+            <a href="#"
+              ><img src="images/footer-assets/tw.svg" alt="twitter"
+            /></a>
+            <a href="#"
+              ><img src="images/footer-assets/ig.svg" alt="instagram"
+            /></a>
+            <a href="#"
+              ><img src="images/footer-assets/tch.svg" alt="twitch"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer__about">
+          <a href="#"><p class="footer__about-p">¿Quiénes somos?</p></a>
+          <a href="#"><p class="footer__about-p">Política de privacidad</p></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

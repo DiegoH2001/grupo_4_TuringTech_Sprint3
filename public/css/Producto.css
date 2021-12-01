@@ -14,7 +14,7 @@
 
 :root{
     --negro-intenso:#0E0B16;
-    --violeta-fuego:#A239CA;
+    --violeta-fuego:#ff70ff;
     --azul-viento:#4717F6;
     --blanco-agua:#D7E1F7;
     --marfil-tierra:#E7DFDD;
@@ -54,7 +54,7 @@
 }
 
 .header__lupa:hover{
-    filter: invert(33%) sepia(42%) saturate(3341%) hue-rotate(264deg) brightness(81%) contrast(93%);
+    filter: invert(62%) sepia(38%) saturate(2978%) hue-rotate(266deg) brightness(107%) contrast(101%);
 }
 
 .header__container-user-car{
@@ -69,7 +69,7 @@
 
 #header__user:hover{
     cursor:pointer;
-    filter: invert(33%) sepia(42%) saturate(3341%) hue-rotate(264deg) brightness(81%) contrast(93%);
+    filter: invert(62%) sepia(38%) saturate(2978%) hue-rotate(266deg) brightness(107%) contrast(101%);
 }
 
 #header__car{
@@ -78,7 +78,7 @@
 
 #header__car:hover{
     cursor:pointer;
-    filter: invert(33%) sepia(42%) saturate(3341%) hue-rotate(264deg) brightness(81%) contrast(93%);
+    filter: invert(62%) sepia(38%) saturate(2978%) hue-rotate(266deg) brightness(107%) contrast(101%);
 }
 
 #header__nav{
@@ -395,7 +395,7 @@ main{
 }
 
 .footer__contact-imgs img:hover{
-    filter: invert(26%) sepia(71%) saturate(2370%) hue-rotate(268deg) brightness(93%) contrast(87%);
+    filter: invert(62%) sepia(38%) saturate(2978%) hue-rotate(266deg) brightness(107%) contrast(101%);
 }
 
 .footer__about-p{
@@ -409,10 +409,6 @@ main{
     color:var(--violeta-fuego);
 }
 
-<<<<<<< HEAD
-
-
-=======
 /*Tablet - netbook*/
 
 @media screen and (min-width:768px) and (max-width:1150px){
@@ -600,4 +596,3 @@ main{
         font-size:1rem;
     }
 }
->>>>>>> c8d79c228a70e7016bf40ef62e5ed06557989a35

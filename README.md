@@ -28,3 +28,5 @@ https://www.maximus.com.ar/   -> web con tematica oscura
 ## Trello
 
 https://trello.com/b/NIotU0Kf/proyecto-integrador-dh-g-4
+
+## Retrospectiva 

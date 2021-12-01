@@ -1,3 +1,33 @@
+/*Diseño provisioanl*/
+
+main {
+    background:var(--negro-intenso) !important;
+    color:white;
+}
+
+header::before{
+    content:"";
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(90deg,rgba(255, 255, 255, 0.010) 0px, rgba(255, 255, 255, 0.020) 1px, transparent 1px, transparent 10px), repeating-linear-gradient(0deg,rgba(255, 255, 255, 0.010) 0px, rgba(255, 255, 255, 0.020) 1px, transparent 1px, transparent 10px);
+    background-size:10px 10px;
+    z-index:3;
+}
+
+*{
+    z-index:5;
+}
+
+.fondo1{
+    position:absolute;
+    width: 150px;
+    height: 125px;
+    z-index:1;
+}
+/**/
+
+
 *,
 *::before,
 *::after{
@@ -14,14 +44,13 @@
 
 :root{
     --negro-intenso:#0E0B16;
-    --violeta-fuego:#A239CA;
+    --violeta-fuego:#ff70ff;
     --azul-viento:#4717F6;
     --blanco-agua:#D7E1F7;
     --marfil-tierra:#E7DFDD;
     --marfil-agua:#EAEAEA;
     --rojo-tipico:#ff0000;
 }
-
 
 .header__container{
     display:flex;
@@ -45,6 +74,13 @@
     height:5rem;
     margin:0 1.5rem 0 0;
     font-size: 2.5rem;
+    background: var(--blanco-agua);
+    border-radius: 5px;
+}
+
+.header__search::placeholder{
+    color:var(--violeta-fuego);
+    text-shadow: 0 0 10px var(--violeta-fuego);
 }
 
 .header__lupa{
@@ -52,6 +88,10 @@
     width:1.5rem;
     border: none;
     cursor: pointer;
+}
+
+.header__lupa:hover{
+    filter: invert(62%) sepia(38%) saturate(2978%) hue-rotate(266deg) brightness(107%) contrast(101%);
 }
 
 .header__container-user-car{
@@ -66,16 +106,16 @@
 
 #header__user:hover{
     cursor:pointer;
-    filter: invert(33%) sepia(42%) saturate(3341%) hue-rotate(264deg) brightness(81%) contrast(93%);
+    filter: invert(62%) sepia(38%) saturate(2978%) hue-rotate(266deg) brightness(107%) contrast(101%);
 }
+
 #header__car{
     width:5rem;
-    color:var(--blanco-agua);
 }
 
 #header__car:hover{
     cursor:pointer;
-    filter: invert(26%) sepia(71%) saturate(2370%) hue-rotate(268deg) brightness(93%) contrast(87%);
+    filter: invert(62%) sepia(38%) saturate(2978%) hue-rotate(266deg) brightness(107%) contrast(101%);
 }
 
 #header__nav{
@@ -102,165 +142,140 @@
     color:var(--violeta-fuego);
 }
 
+/* ESTILOS DE SLIDER */
+
+.container{
+    display: flex;
+}
+
+#container-slider{
+    margin: auto;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+#container-slider > ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#container-slider > ul.slider{
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    height: 200px;
+}
+
+
+#container-slider > ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:var(--blanco-agua);
+}
+
+#container-slider > ul.slider li img{
+    width: 100%;
+    object-fit: cover;
+}
+
+#container-slider > ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+#container-slider > ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+    }
+#container-slider > .menu{
+    
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+#container-slider > .menu li{
+    display: inline-block;
+    text-align: center;
+    
+}
+#container-slider > .menu li a{
+    display: flex;
+    color: var(--marfil-tierra);
+    text-decoration: none;
+    background-color: var(--azul-viento);
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* FIN ESTILOS DE SLIDER */
 
 main{
     background-color: var(--blanco-agua);
-    height: 100vh;
+}
+
+/* PRODUCTOS DESTACADOS */
+
+.titleD{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 3rem;
+}
+
+.products{
+    width: 100%;
     display: flex;
+    justify-content: space-around;
+    height: 33rem;
+}
+
+.product1, .product2, .product3{
+    background-color: var(--violeta-fuego);
+    border-radius: 3rem;
+    border: 3px solid black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    width: 30%;
+}
+
+.productimage{
+    width: 90%;
+}
+
+.price{
+    font-size: 3rem;
+    color: var(--marfil-tierra);
+}
+
+.containermaps{
+    display: flex;
     justify-content: center;
     
 }
 
-
-.container{
-    background-color: var(--marfil-agua);
-    height: 90%;
-    width: 90vw;
-    border-radius: 5%;
-    border: 1px solid var(--negro-intenso);
-    display: flex;
-    justify-content: space-around;
-    
-}
-
-.destacados{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    height: 100%;
-}
-
-.cont-menu{
-    width: 20%;
-    margin: 50px ;
-    
-}
-
-.cont-menu .cont-enlace{
-    box-shadow: 0px 0px 2px 1px var(--violeta-fuego);  
-}
-
-.cont-menu .cont-enlace .enlace{
-    height: 0;
-    overflow: hidden;
-}
-
-.cont-menu .cont-enlace .animation{
-    height: 100%;
-}
-
-.cont-menu .cont-enlace .opcion{
-    display: flex;
-    justify-content: space-between;
+.mapa{
+    height:150px ;
+    width: 150px;
     background-color: var(--violeta-fuego);
-    color: var(--marfil-agua);
-    padding: 1.3rem 1rem;
-    cursor: pointer;
-    user-select: none;
-    border: 1px solid var(--negro-intenso);
-}
-
-.cont-menu .cont-enlace .opcion p{
-    font-size: 1.5rem;
-}
-
-.cont-menu .cont-enlace .opcion .icono{
-    background-color: var(--marfil-tierra);
-    color: var(--violeta-fuego);
-    font-weight: bold;
-    font-size: 2.2rem;
-    text-align: center;
-    width: 2.3rem;
-    border-radius: 0.5rem;
-}
-
-.cont-menu .cont-enlace .enlace a{
-    display: block;
-    padding: 1rem 1.5rem;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.cont-menu .cont-enlace .enlace a:hover{
-    background-color: var(--azul-viento);
-    color: var(--blanco-agua);
-}
-
-.orden{
-    margin-left: -10%;
-    font-size: 1.5rem;
-    background-color: var(--marfil-agua);
-    
-}
-
-.orden select{
-    height: 100px;
-    width: 100px;
 }
 
 
-.destacadosorden{
-    background-color: var(--blanco-agua);
-    width: 10%;
-}
-
-.product1, .product2, .product3, .product4, .product5{
-    height: 200px;
-    width: 60rem;
-    background-color: var(--violeta-fuego);
-    margin: 50px;
-    border-radius: 10px;
-    border: 3px solid var(--negro-intenso);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.descripcion p{
-    font-size: 1.5rem;
-    color: var(--marfil-agua);
-}
-
-.precio p{
-    font-size: 2rem;
-    color: var(--marfil-agua);
-}
-
-.boton input{
-    border-radius: 5px;
-    height: 3.5rem;
-    width: 15rem;
-    margin: 1rem;
-    color: var(--negro-intenso);
-    background-color: var(--blanco-agua);
-    border: 1px solid var(--negro-intenso);
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.boton input:hover{
-    border-radius: 5px;
-    height: 2.5rem;
-    width: 13rem;
-    margin: 1rem;
-    color: var(--blanco-agua);
-    background-color: var(--azul-viento);
-    border: 1px solid var(--negro-intenso);
-}
-
-.boton input{
-    transition: color 0.2s linear 0.2s;
-    transition: height 0.2s linear 0.2s;
-    transition: width 0.2s linear 0.2s;
-    
-}
-
-.imagen img{
-    width: 15rem;
-    height: 15rem;
-}
-
+/* FIN PRODUCTOS DESTACADOS */
 .footer__brands{
     background-color: var(--marfil-tierra);
     display: flex;
@@ -327,7 +342,7 @@ main{
 }
 
 .footer__contact-imgs img:hover{
-    filter: invert(26%) sepia(71%) saturate(2370%) hue-rotate(268deg) brightness(93%) contrast(87%);
+    filter: invert(62%) sepia(38%) saturate(2978%) hue-rotate(266deg) brightness(107%) contrast(101%);
 }
 
 .footer__about-p{
@@ -354,13 +369,6 @@ main{
         font-size:2rem;
     }
     
-    
-.product1, .product2, .product3, .product4, .product5{
-    height: 200px;
-    width: 40rem;
-}
-
-
     .footer__work-p{
         font-size:1.5rem;
     }
@@ -410,31 +418,16 @@ main{
         height: 9rem;
     }
 
-    .cont-menu{
-        display: none;
+    .titleD{
+        font-size: 2rem;
     }
 
-    .destacados{
-        width: 85%;
+    .price{
+        font-size: 1.5rem;
     }
 
-    .product1, .product2, .product3, .product4, .product5{
-        height: 200px;
-        width: 20rem;
-    }
-
-    .imagen img{
-        width: 7rem;
-        height: 7rem;
-    }
-
-    .boton{
-        display: none;
-    }
-
-    .precio p{
-        font-size: 1rem;
-        color: var(--marfil-agua);
+    iframe{
+        width: 15rem;
     }
 
     .footer__work{

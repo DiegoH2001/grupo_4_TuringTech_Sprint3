@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Registro.css">
+    <title>Registro</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header__container">
+            <a href="./index"><img src="images/header-assets/logo.svg" alt="logoTuringTech" id="header__logo"></a>
+            <form action="#" method="get" class="header__form">
+                <input type="text" name="search-bar" id="search-bar" class="header__search" placeholder="Buscar...">
+                <button type="submit" class="header__lupa"><img src="images/header-assets/lupa.svg" alt="lupa"></button>
+            </form>
+            <div class="header__container-user-car">
+                <a href="./login"><img src="images/header-assets/user.svg" alt="usuario" id="header__user"></a>
+                <img src="images/header-assets/carrito.svg" alt="carrito" id="header__car">
+            </div>
+        </div>
+
+        <nav id="header__nav">
+            <ul class="nav__ul">
+                <li class="nav__li"><a href="productos" class="nav__a">Productos</a></li>
+                <li class="nav__li"><a href="#" class="nav__a">Mi cuenta</a></li>
+                <li class="nav__li"><a href="ayuda" class="nav__a">Ayuda</a></li>
+                <li class="nav__li"><a href="#" class="nav__a">Encontrá tu equipo</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="main__container">
+
+            <h1 class="main__title">REGISTRO</h1>
+
+            <div class="main__subtitle">
+                <p class="main__subtitle-p">Por favor, rellena tus respectivos datos a continuación para poder validarte
+                    en el sistema.</p>
+            </div>
+
+            <form action="#" method="post">
+                <div class="main__container-name nombre">
+                    <div class="main__bluebox"></div>
+                    <div class="main__register">
+                        <img src="images/registro-assets/user.svg" alt="usuario-registro" id="main__register-user">
+                        <input type="text" name="registroUsuario" id="registroUsuario" placeholder="NOMBRE COMPLETO"
+                            class="main__register-user" required
+                            oninvalid="this.setCustomValidity(' ')">
+                    </div>
+                </div>
+                <div class="main__container-id dni">
+                    <div class="main__bluebox"></div>
+                    <div class="main__register">
+                        <img src="images/registro-assets/id.svg" alt="dni-registro" id="main__register-id">
+                        <input type="text" name="registroId" id="registroId" placeholder="DNI" class="main__register-id"
+                            required oninvalid="this.setCustomValidity(' ')">
+                    </div>
+                </div>
+                <div class="main__container-email email">
+                    <div class="main__bluebox"></div>
+                    <div class="main__register">
+                        <img src="images/registro-assets/email.svg" alt="email-registro" id="main__register-email">
+                        <input type="text" name="registroEmail" id="registroEmail" placeholder="EMAIL"
+                            class="main__register-email" required oninvalid="this.setCustomValidity(' ')">
+                    </div>
+                </div>
+                <div class="main__container-lock contrasenia">
+                    <div class="main__bluebox"></div>
+                    <div class="main__register">
+                        <img src="images/registro-assets/unlock.svg" alt="contraseña-registro" id="main__register-lock">
+                        <input type="text" name="registroLock" id="registroLock" placeholder="CONTRASEÑA"
+                            class="main__register-lock" required oninvalid="this.setCustomValidity(' ')">
+                    </div>
+                </div>
+                <div class="main__container-lockRepeat contraseniarepeat">
+                    <div class="main__bluebox"></div>
+                    <div class="main__register">
+                        <img src="images/registro-assets/lock.svg" alt="repetir-contraseña-registro"
+                            id="main__register-lockRepeat">
+                        <input type="text" name="registroLockRepeat" id="registroLockRepeat"
+                            placeholder="REPETIR CONTRASEÑA" class="main__register-lockRepeat" required oninvalid="this.setCustomValidity(' ')">
+                    </div>
+                </div>
+
+                <button type="submit" id="main__register-submit">Registrarse</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="footer__brands">
+            <img src="images/brands-assets/hyperx.png" alt="hyperxLogo" id="hyperx">
+            <img src="images/brands-assets/gigabyte.png" alt="gigabyteLogo" id="gigabyte">
+            <img src="images/brands-assets/msi.png" alt="msiLogo" id="msi">
+            <img src="images/brands-assets/asus.png" alt="asusLogo" id="asus">
+            <img src="images/brands-assets/seagate.png" alt="seagateLogo" id="seagate">
+            <img src="images/brands-assets/thermal.png" alt="thermalLogo" id="thermal">
+            <img src="images/brands-assets/nvidia.png" alt="nvidiaLogo" id="nvidia">
+        </div>
+
+        <div class="footer__container">
+            <div class="footer__work">
+                <p class="footer__work-p">Trabajá con nosotros</p>
+                <img src="images/footer-assets/qr.png" alt="qr código" id="footer__work-img">
+            </div>
+
+            <div class="footer__contact">
+                <p class="footer__contact-p">Nuestras redes sociales</p>
+                <div class="footer__contact-imgs">
+                    <a href="#"><img src="images/footer-assets/fb.svg" alt="facebook"></a>
+                    <a href="#"><img src="images/footer-assets/tw.svg" alt="twitter"></a>
+                    <a href="#"><img src="images/footer-assets/ig.svg" alt="instagram"></a>
+                    <a href="#"><img src="images/footer-assets/tch.svg" alt="twitch"></a>
+                </div>
+            </div>
+
+            <div class="footer__about">
+                <a href="#">
+                    <p class="footer__about-p">¿Quiénes somos?</p>
+                </a>
+                <a href="#">
+                    <p class="footer__about-p">Política de privacidad</p>
+                </a>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
