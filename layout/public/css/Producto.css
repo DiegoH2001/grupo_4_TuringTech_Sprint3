@@ -1,0 +1,603 @@
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    font-size:10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --negro-intenso:#0E0B16;
+    --violeta-fuego:#A239CA;
+    --azul-viento:#4717F6;
+    --blanco-agua:#D7E1F7;
+    --marfil-tierra:#E7DFDD;
+    --marfil-agua:#EAEAEA;
+    --rojo-tipico:#ff0000;
+}
+
+.header__container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--negro-intenso);
+    padding:0.5rem 1rem;
+}
+
+#header__logo{
+    width:16rem;
+}
+
+.header__form{
+    display: flex;
+    align-items: center;
+}
+
+.header__search{
+    width:575px;
+    height:5rem;
+    margin:0 1.5rem 0 0;
+    font-size: 2.5rem;
+}
+
+.header__lupa{
+    background-color: transparent;
+    width:1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.header__lupa:hover{
+    filter: invert(33%) sepia(42%) saturate(3341%) hue-rotate(264deg) brightness(81%) contrast(93%);
+}
+
+.header__container-user-car{
+    display: flex;
+    justify-content: space-evenly;
+    width:12.5rem;
+}
+
+#header__user{
+    width:5rem;
+}
+
+#header__user:hover{
+    cursor:pointer;
+    filter: invert(33%) sepia(42%) saturate(3341%) hue-rotate(264deg) brightness(81%) contrast(93%);
+}
+
+#header__car{
+    width:5rem;
+}
+
+#header__car:hover{
+    cursor:pointer;
+    filter: invert(33%) sepia(42%) saturate(3341%) hue-rotate(264deg) brightness(81%) contrast(93%);
+}
+
+#header__nav{
+    background-color: var(--azul-viento);
+}
+
+.nav__ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:7vh;
+}
+
+.nav__li{
+    margin: 0 5%;
+}
+
+.nav__a{
+    font-size: 2.5rem;
+    color:var(--marfil-tierra);
+}
+
+.nav__a:hover{
+    color:var(--violeta-fuego);
+}
+
+main{
+    background-color: var(--blanco-agua);
+    padding:5rem;
+}
+
+.main__container{
+    background-color: var(--marfil-agua);
+    margin:0 auto;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:5rem 8rem 8rem 8rem;
+    border:3px solid var(--negro-intenso);
+}
+
+.main__product-imgs-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:40%;
+    margin:-7rem 0 0 0;
+}
+
+#main__product-imgs-watch{
+    width:40rem;
+    filter:drop-shadow(0 0 9px var(--violeta-fuego));
+}
+
+.main__product-imgs-title{
+    font-size: 2rem;
+    text-decoration: underline var(--violeta-fuego);
+    text-underline-offset: 0.5rem;
+}
+
+.main__product-imgs{
+    background-color: var(--blanco-agua);
+    display: flex;
+    justify-content: space-evenly;
+    width:42rem;
+    padding: 1rem;
+    margin:3rem 0;
+    border-radius: 5px;
+    border:1px solid var(--negro-intenso);
+}
+
+.main__product-imgs-ryzen{
+    width:10rem;
+    height: 10rem;
+    cursor: pointer;
+}
+
+.main__product-imgs-ryzen:hover{
+    filter:drop-shadow(0 0 9px var(--azul-viento));
+}
+
+.main__product-imgs-ryzen:nth-child(1){
+    filter:drop-shadow(0 0 9px var(--violeta-fuego));
+}
+
+.main__product-info-container{
+    width:50%;
+}
+
+.main__product-info-head{
+    border-bottom: 1px solid var(--violeta-fuego);
+    margin:0 0 2rem 0;
+}
+
+.main__product-head-title{
+    font-size: 3.5rem;
+}
+
+.main__product-head-subtitle{
+    display: inline-flex;
+    font-size: 2rem;
+    margin:2rem 0;
+}
+
+.main__product-info-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:2rem 0;
+    border-bottom: 1px solid var(--violeta-fuego);
+}
+
+.main__product-price *{
+    color:var(--azul-viento);
+}
+
+.main__product-price-title{
+    font-size: 3.5rem;
+}
+
+.main__product-price-subtitle{
+    font-size: 2.5rem;
+}
+
+.main__product-fees *{
+    color:var(--azul-viento);
+}
+
+.main__product-fees-p{
+    font-size: 2.5rem;
+}
+
+.main__product-fees-title{
+    font-size:3.5rem;
+}
+
+.main__product-fees-subtitle{
+    font-size:2.5rem;
+    margin:0 0 2rem 0;
+}
+
+.main__product-info-footer div{
+    display: flex;
+    align-items: center;
+    margin:2rem 0;
+}
+
+.main__product-info-footer div img{
+    width:4rem;
+    margin:0 2rem 0 0;
+}
+
+.main__product-info-footer div p{
+    font-size:2rem;
+    color:var(--azul-viento);
+}
+
+.main__product-add-button{
+    background-color: var(--azul-viento);
+    width:25rem;
+    height: 8rem;
+    font-size: 2.5rem;
+    color:var(--blanco-agua);
+    margin:3rem 0;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+#main__product-add-icon{
+    margin:0 0 0 3rem;
+    width:7rem;
+}
+
+.main__product-add-button:hover{
+    color:var(--violeta-fuego);
+}
+
+.main__product-specs-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:5rem 0;
+}
+
+.main__product-specs-title{
+    font-size:2.5rem;
+    text-decoration: underline var(--azul-viento);
+    text-underline-offset: 0.5rem;
+    width: 100%;
+    margin:0 0 3rem 0;
+}
+
+.main__product-specs-characts-title{
+    font-size: 2rem;
+    color:var(--azul-viento);
+    text-decoration: underline var(--violeta-fuego);
+    text-underline-offset: 0.2rem;
+    margin:0 0 2rem 0;
+}
+
+.main__product-specs-characts-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.main__product-specs-characts-info span{
+    font-size: 1.5rem;
+    color:var(--azul-viento);
+}
+
+.main__product-specs-coolers-title{
+    font-size: 2rem;
+    color:var(--azul-viento);
+    text-decoration: underline var(--violeta-fuego);
+    text-underline-offset: 0.2rem;
+    margin:0 0 2rem 0;
+}
+
+.main__product-specs-coolers-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.main__product-specs-coolers-info span{
+    font-size: 1.5rem;
+    color:var(--azul-viento);
+}
+
+.main__product-specs-memory-title{
+    font-size: 2rem;
+    color:var(--azul-viento);
+    text-decoration: underline var(--violeta-fuego);
+    text-underline-offset: 0.2rem;
+    margin:0 0 2rem 0;
+}
+
+.main__product-specs-memory-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.main__product-specs-memory-info span{
+    font-size: 1.5rem;
+    color:var(--azul-viento);
+}
+
+.footer__brands{
+    background-color: var(--marfil-tierra);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer__brands img{
+    width: 100%;
+    max-width: 20rem;
+    max-height: 20rem;
+    min-width: 1rem;
+    min-height: 1rem;
+}
+
+#msi{
+    width: 50%;
+}
+
+@media screen and (min-width:1300px) {
+    #msi{
+        width: 7%;
+    }
+}
+
+.footer__container{
+    background-color: var(--azul-viento);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:var(--blanco-agua);
+}
+
+.footer__work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 4rem;
+    justify-content: space-between;
+}
+
+.footer__work-p{
+    font-size: 2rem;
+    margin-bottom:1rem;
+}
+
+#footer__work-img{
+    width:5rem;
+}
+
+.footer__contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer__contact-p{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer__contact-imgs img{
+    margin:1rem;
+}
+
+.footer__contact-imgs img:hover{
+    filter: invert(26%) sepia(71%) saturate(2370%) hue-rotate(268deg) brightness(93%) contrast(87%);
+}
+
+.footer__about-p{
+    font-size: 2rem;
+    padding:0 4rem;
+    margin:3.5rem 0;
+    color:var(--blanco-agua);
+}
+
+.footer__about-p:hover{
+    color:var(--violeta-fuego);
+}
+
+<<<<<<< HEAD
+
+
+=======
+/*Tablet - netbook*/
+
+@media screen and (min-width:768px) and (max-width:1150px){
+    .header__form{
+        width: 50%;
+    }
+    .header__search{
+        width:100%;
+    }
+    .nav__a{
+        font-size:2rem;
+    }
+    .main__container{
+        padding:5rem 3rem;
+    }
+    .main__product-imgs-container{
+        width: 50%;
+        margin:-6rem 0;
+        justify-content: flex-start;
+    }
+    #main__product-imgs-watch{
+        width: 100%;
+    }
+    .main__product-imgs{
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    .main__product-info-container{
+        width: 45%;
+    }
+    .main__product-head-title{
+        font-size: 3rem;
+    }
+    .main__product-info-body *{
+        text-align: center;
+    }
+    .main__product-price-title{
+        font-size:2.5rem;
+    }
+    .main__product-price-subtitle{
+        font-size: 1.5rem;
+    }
+    .main__product-fees-p{
+        font-size: 1.5rem;
+    }
+    .main__product-fees-title{
+        font-size: 2.5rem;
+    }
+    .main__product-fees-subtitle{
+        font-size: 1.5rem;
+    }
+    .main__product-specs-container > *:not(h2){
+        margin: 1.5rem 0 0 0;
+    }
+    .footer__work-p{
+        font-size:1.5rem;
+    }
+    .footer__contact-p{
+        font-size:1.5rem;
+    }
+    .footer__contact-imgs img{
+        width:4rem;
+    }
+    .footer__about-p{
+        font-size:1.5rem;
+    }
+}
+
+/*móvil*/
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    #header__logo{
+        width:6rem;
+    }
+    .header__form{
+        width:50%;
+    }
+    .header__search{
+        width:100%;
+        height: 2rem;
+        font-size: 1.5rem;
+    }
+    .header__lupa img{
+        width:2.5rem;
+    }
+    .header__container-user-car{
+        width: 6rem;
+    }
+    #header__user{
+        width:2.5rem;
+    }
+    #header__car{
+        width:2.5rem;
+    }
+    .nav__a{
+        font-size:1.1rem;
+        text-align: center;
+    }
+    main{
+        padding: 1.5rem;
+    }
+    .main__container{
+        padding:0 1rem;
+        width: 100%;
+        text-align: center;
+    }
+    .main__product-imgs-container{
+        width: 100%;
+        margin:0;
+    }
+    #main__product-imgs-watch{
+        width: 100%;
+    }
+    .main__product-imgs-title{
+        font-size: 1.5rem;
+    }
+    .main__product-imgs{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .main__product-info-container{
+        width: 100%;
+    }
+    .main__product-head-title{
+        font-size: 2.5rem;
+    }
+    .main__product-head-subtitle{
+        font-size: 1.5rem;
+    }
+    .main__product-price-title{
+        font-size:2.5rem;
+    }
+    .main__product-price-subtitle{
+        font-size: 1.5rem;
+    }
+    .main__product-fees-p{
+        font-size: 1.5rem;
+    }
+    .main__product-fees-title{
+        font-size: 2.5rem;
+    }
+    .main__product-fees-subtitle{
+        font-size: 1.5rem;
+    }
+    .main__product-add-container{
+        width: 100%;
+    }
+    .main__product-add-button{
+        width: 100%;
+        margin:3rem 0 0 0;
+    }
+    .main__product-specs-container{
+        margin: 3rem 0;
+    }
+    .main__product-specs-container > *:not(h2){
+        margin: 1rem 0;
+        width: 100%;
+    }
+    .footer__work{
+        width:20%;
+    }
+    .footer__work-p{
+        display: none;
+    }
+    #footer__work-img{
+        width:4rem;
+    }
+    .footer__contact-p{
+        font-size: 1rem;
+    }
+    .footer__contact{
+        width:70%;
+    }
+    .footer__contact-imgs img{
+        width:2rem;
+        margin:0.5rem;
+    }
+    .footer__about{
+        width:30%;
+        font-size: 2rem;
+    }
+    .footer__about-p{
+        padding:0;
+        margin:1rem 0;
+        font-size:1rem;
+    }
+}
+>>>>>>> c8d79c228a70e7016bf40ef62e5ed06557989a35
