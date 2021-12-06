@@ -276,7 +276,7 @@ h4 {
 } 
 /*Tablet - netbook*/
 
-@/*Tablet - netbook*/
+/*Tablet - netbook*/
 
 @media screen and (min-width:768px) and (max-width:1150px){
     .header__form{
