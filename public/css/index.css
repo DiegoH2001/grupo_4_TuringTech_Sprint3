@@ -1,33 +1,3 @@
-/*Diseño provisioanl*/
-
-main {
-    background:var(--negro-intenso) !important;
-    color:white;
-}
-
-header::before{
-    content:"";
-    position:fixed;
-    width: 100%;
-    height: 100%;
-    background: repeating-linear-gradient(90deg,rgba(255, 255, 255, 0.010) 0px, rgba(255, 255, 255, 0.020) 1px, transparent 1px, transparent 10px), repeating-linear-gradient(0deg,rgba(255, 255, 255, 0.010) 0px, rgba(255, 255, 255, 0.020) 1px, transparent 1px, transparent 10px);
-    background-size:10px 10px;
-    z-index:3;
-}
-
-*{
-    z-index:5;
-}
-
-.fondo1{
-    position:absolute;
-    width: 150px;
-    height: 125px;
-    z-index:1;
-}
-/**/
-
-
 *,
 *::before,
 *::after{
@@ -44,12 +14,14 @@ header::before{
 
 :root{
     --negro-intenso:#0E0B16;
+    --negro-intenso-transparente:#0e0b16be;
     --violeta-fuego:#ff70ff;
     --azul-viento:#4717F6;
     --blanco-agua:#D7E1F7;
     --marfil-tierra:#E7DFDD;
+    --marfil-oscuro:#727272b2;
     --marfil-agua:#EAEAEA;
-    --rojo-tipico:#ff0000;
+    --rojo-fuego:#f6221783;
 }
 
 .header__container{

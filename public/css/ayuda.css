@@ -14,12 +14,14 @@
 
 :root{
     --negro-intenso:#0E0B16;
+    --negro-intenso-transparente:#0e0b16be;
     --violeta-fuego:#ff70ff;
     --azul-viento:#4717F6;
     --blanco-agua:#D7E1F7;
     --marfil-tierra:#E7DFDD;
+    --marfil-oscuro:#727272b2;
     --marfil-agua:#EAEAEA;
-    --rojo-tipico:#ff0000;
+    --rojo-fuego:#f6221783;
 }
 
 .header__container{
@@ -276,7 +278,7 @@ h4 {
 } 
 /*Tablet - netbook*/
 
-@/*Tablet - netbook*/
+/*Tablet - netbook*/
 
 @media screen and (min-width:768px) and (max-width:1150px){
     .header__form{
