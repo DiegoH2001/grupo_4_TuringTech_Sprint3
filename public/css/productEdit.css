@@ -14,14 +14,12 @@
 
 :root {
   --negro-intenso: #0e0b16;
-  --negro-intenso-transparente: #0e0b16be;
   --violeta-fuego: #ff70ff;
   --azul-viento: #4717f6;
   --blanco-agua: #d7e1f7;
   --marfil-tierra: #e7dfdd;
-  --marfil-oscuro: #727272b2;
   --marfil-agua: #eaeaea;
-  --rojo-fuego: #f6221783;
+  --rojo-tipico: #ff0000;
 }
 
 .header__container {
@@ -110,94 +108,6 @@
   color: var(--violeta-fuego);
 }
 
-main {
-  background-color: var(--blanco-agua);
-  padding: 5rem;
-}
-
-.main__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-  height: 100vh;
-}
-
-.contenedor-sesion {
-  background-color: var(--marfil-tierra);
-  height: 250px;
-  width: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-  border-radius: 10px;
-}
-
-.contenedor-facebook-google {
-  background-color: var(--marfil-tierra);
-  height: 250px;
-  width: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-  border-radius: 10px;
-}
-
-.main__container-google button {
-  background-color: var(--blanco-agua);
-  margin-top: 10px;
-  border: 1px solid var(--negro-intenso);
-  width: 300px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.main__container-facebook button {
-  background-color: var(--azul-facebook);
-  border: 1px solid var(--negro-intenso);
-  width: 300px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.main__container-name-nombre input {
-  background-color: var(--blanco-agua);
-  margin-top: 10px;
-  border: 1px solid var(--negro-intenso);
-  width: 300px;
-  height: 35px;
-  font-size: 2.5rem;
-}
-
-.imagen-facebook {
-  width: 25px;
-}
-
-.imagen-google {
-  width: 25px;
-}
-
-.letra-facebook {
-  font-size: 2.5rem;
-  color: var(--blanco-agua);
-}
-
-.letra-google {
-  font-size: 2.5rem;
-  color: var(--negro-intenso);
-}
-.form-sesion {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-}
-
 .footer__brands {
   background-color: var(--marfil-tierra);
   display: flex;
@@ -213,23 +123,6 @@ main {
   min-height: 1rem;
 }
 
-.boton-iniciar {
-  background-color: var(--azul-viento);
-  margin-top: 10px;
-  border-radius: 5px;
-  width: 75px;
-  height: 30x;
-  border: 1px solid var(--negro-intenso);
-  font-size: 2.5rem;
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-a {
-  font-size: 2.5rem;
-}
 #msi {
   width: 50%;
 }
@@ -238,6 +131,27 @@ a {
   #msi {
     width: 7%;
   }
+}
+
+.ingreso {
+  width: 2rem;
+  margin: 2rem;
+}
+.contenedor-envios {
+  background-color: var(--violeta-fuego);
+  margin-top: 15px;
+  width: 500px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  border: 1px solid var(--negro-intenso);
+}
+
+#imagen-descuento {
+  width: 3rem;
+  height: 3rem;
 }
 
 .footer__container {
@@ -295,9 +209,6 @@ a {
 .footer__about-p:hover {
   color: var(--violeta-fuego);
 }
-
-/*Tablet - netbook*/
-
 @media screen and (min-width: 768px) and (max-width: 1150px) {
   .header__form {
     width: 50%;
@@ -305,12 +216,10 @@ a {
   .header__search {
     width: 100%;
   }
+
   .nav__a {
     font-size: 2rem;
   }
-
-  /*MAIN*/
-
   .footer__work-p {
     font-size: 1.5rem;
   }
@@ -324,9 +233,6 @@ a {
     font-size: 1.5rem;
   }
 }
-
-/*móvil*/
-
 @media screen and (min-width: 320px) and (max-width: 767px) {
   #header__logo {
     width: 6rem;
@@ -355,9 +261,6 @@ a {
     font-size: 1.1rem;
     text-align: center;
   }
-
-  /*MAIN*/
-
   .footer__work {
     width: 20%;
   }
@@ -387,7 +290,56 @@ a {
     font-size: 1rem;
   }
 }
+/*productEdit*/
+
+.main__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100vh;
+  margin-bottom: 5rem;
+}
+
 body {
   background: url("../images/background-image.jpg") fixed;
   background-size: 100% 100%;
+}
+
+.encabezado h1 {
+  font-size: 3rem;
+  text-align: right;
+  color: white;
+}
+
+.desplegable1 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.desplegable2 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.nombres {
+  text-align: center;
+  width: 1000px;
+  height: 300px;
+  font-size: 1rem;
+  color: white;
+  justify-content: center;
+}
+
+p {
+  color: white;
+  font-size: 15px;
 }
