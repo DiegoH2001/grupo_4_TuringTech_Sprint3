@@ -24,6 +24,11 @@
     --rojo-fuego:#f6221783;
 }
 
+body{
+    background: url("../images/background-image.jpg") fixed;
+        background-size: 100% 100%;
+}
+
 .header__container{
     display:flex;
     justify-content: space-between;
@@ -33,6 +38,7 @@
 }
 
 #header__logo{
+    margin-top:0.9rem;
     width:16rem;
 }
 
@@ -46,6 +52,7 @@
     height:5rem;
     margin:0 1.5rem 0 0;
     font-size: 2.5rem;
+    border-radius: 3px;
 }
 
 .header__lupa{
@@ -53,6 +60,10 @@
     width:1.5rem;
     border: none;
     cursor: pointer;
+}
+
+.header__lupa img{
+    width: 4.5rem;
 }
 
 .header__lupa:hover{
@@ -84,7 +95,7 @@
 }
 
 #header__nav{
-    background-color: var(--azul-viento);
+    background-color: var(--rojo-fuego);
 }
 
 .nav__ul{
@@ -108,12 +119,11 @@
 }
 
 main{
-    background-color: var(--blanco-agua);
     padding:5rem;
 }
 
 .main__container{
-    background-color: var(--marfil-agua);
+    background-color: var(--rojo-fuego);
     margin:0 auto;
     border-radius: 30px;
     display: flex;
@@ -121,6 +131,7 @@ main{
     flex-wrap: wrap;
     padding:5rem 8rem 8rem 8rem;
     border:3px solid var(--negro-intenso);
+    color:var(--blanco-agua);
 }
 
 .main__product-imgs-container{
@@ -143,7 +154,7 @@ main{
 }
 
 .main__product-imgs{
-    background-color: var(--blanco-agua);
+    background-color: var(--negro-intenso-transparente);
     display: flex;
     justify-content: space-evenly;
     width:42rem;
@@ -195,7 +206,7 @@ main{
 }
 
 .main__product-price *{
-    color:var(--azul-viento);
+    color:var(--blanco-agua);
 }
 
 .main__product-price-title{
@@ -207,7 +218,7 @@ main{
 }
 
 .main__product-fees *{
-    color:var(--azul-viento);
+    color:var(--blanco-agua);
 }
 
 .main__product-fees-p{
@@ -232,15 +243,16 @@ main{
 .main__product-info-footer div img{
     width:4rem;
     margin:0 2rem 0 0;
+    filter:drop-shadow(0 0 9px var(--rojo-fuego));
 }
 
 .main__product-info-footer div p{
     font-size:2rem;
-    color:var(--azul-viento);
+    color:var(--blanco-agua);
 }
 
 .main__product-add-button{
-    background-color: var(--azul-viento);
+    background-color: var(--negro-intenso-transparente);
     width:25rem;
     height: 8rem;
     font-size: 2.5rem;
@@ -276,8 +288,8 @@ main{
 
 .main__product-specs-characts-title{
     font-size: 2rem;
-    color:var(--azul-viento);
-    text-decoration: underline var(--violeta-fuego);
+    color:var(--blanco-agua);
+    text-decoration: underline var(--azul-viento);
     text-underline-offset: 0.2rem;
     margin:0 0 2rem 0;
 }
@@ -290,13 +302,14 @@ main{
 
 .main__product-specs-characts-info span{
     font-size: 1.5rem;
-    color:var(--azul-viento);
+    color:var(--violeta-fuego);
+    text-shadow: 0 0 9px var(--negro-intenso);
 }
 
 .main__product-specs-coolers-title{
     font-size: 2rem;
-    color:var(--azul-viento);
-    text-decoration: underline var(--violeta-fuego);
+    color:var(--blanco-agua);
+    text-decoration: underline var(--azul-viento);
     text-underline-offset: 0.2rem;
     margin:0 0 2rem 0;
 }
@@ -309,13 +322,14 @@ main{
 
 .main__product-specs-coolers-info span{
     font-size: 1.5rem;
-    color:var(--azul-viento);
+    color:var(--violeta-fuego);
+    text-shadow: 0 0 9px var(--negro-intenso);
 }
 
 .main__product-specs-memory-title{
     font-size: 2rem;
-    color:var(--azul-viento);
-    text-decoration: underline var(--violeta-fuego);
+    color:var(--blanco-agua);
+    text-decoration: underline var(--azul-viento);
     text-underline-offset: 0.2rem;
     margin:0 0 2rem 0;
 }
@@ -328,14 +342,16 @@ main{
 
 .main__product-specs-memory-info span{
     font-size: 1.5rem;
-    color:var(--azul-viento);
+    color:var(--violeta-fuego);
+    text-shadow: 0 0 9px var(--negro-intenso);
 }
 
 .footer__brands{
-    background-color: var(--marfil-tierra);
+    background-color: var(--marfil-oscuro);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 1%;
 }
 
 .footer__brands img{
@@ -357,7 +373,7 @@ main{
 }
 
 .footer__container{
-    background-color: var(--azul-viento);
+    background-color: var(--negro-intenso);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -375,6 +391,8 @@ main{
 .footer__work-p{
     font-size: 2rem;
     margin-bottom:1rem;
+    color: var(--blanco-agua);
+    text-shadow: -1px -1px 0 var(--rojo-fuego), 1px -1px 0 var(--rojo-fuego), -1px 1px 0 var(--rojo-fuego), 1px 1px 0 var(--rojo-fuego);
 }
 
 #footer__work-img{
@@ -390,6 +408,8 @@ main{
 .footer__contact-p{
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: var(--blanco-agua);
+  text-shadow: -1px -1px 0 var(--rojo-fuego), 1px -1px 0 var(--rojo-fuego), -1px 1px 0 var(--rojo-fuego), 1px 1px 0 var(--rojo-fuego);
 }
 
 .footer__contact-imgs img{
@@ -404,7 +424,8 @@ main{
     font-size: 2rem;
     padding:0 4rem;
     margin:3.5rem 0;
-    color:var(--blanco-agua);
+    color: var(--blanco-agua);
+  text-shadow: -1px -1px 0 var(--rojo-fuego), 1px -1px 0 var(--rojo-fuego), -1px 1px 0 var(--rojo-fuego), 1px 1px 0 var(--rojo-fuego);
 }
 
 .footer__about-p:hover{
