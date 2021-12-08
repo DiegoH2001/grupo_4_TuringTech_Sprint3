@@ -1,3 +1,7 @@
+.hamburger-css{
+    display: none;
+}
+
 .header__container{
     display:flex;
     justify-content: space-between;
@@ -105,6 +109,13 @@
 
 /*móvil*/
 @media screen and (min-width:320px) and (max-width:767px) {
+    .hamburger-css{
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+        cursor:none;
+    }
+
     #header__logo{
         width:6rem;
     }
@@ -131,5 +142,8 @@
     .nav__a{
         font-size:1.1rem;
         text-align: center;
+    }
+    .nav__ul{
+        display:none;
     }
 }
