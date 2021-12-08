@@ -1,5 +1,5 @@
 # Retrospectiva: 
-### ![image](https://user-images.githubusercontent.com/91677757/145303791-25d8283e-20ff-4d3c-bd0f-224b946d184a.png)
+###### ![image](https://user-images.githubusercontent.com/91677757/145303791-25d8283e-20ff-4d3c-bd0f-224b946d184a.png)
 
 
 
