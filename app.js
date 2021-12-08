@@ -1,13 +1,25 @@
 const express = require("express"),
-path = require("path"),
-app = express();
+      path = require("path"),
+      app = express(),
+      productRutas = require("./routers/productRoute"),
+      usersRutas = require("./routers/userRoute");
 
 app.use(express.static(path.resolve(__dirname, "./public")));
 
 app.listen(process.env.PORT || 3000, () => {
     console.log("Servidor de maquetado corriendo");
 })
-app.get("/", (req,res) => {
+
+app.use("/", productRutas)
+app.use("/productCart", productRutas)
+app.use("/productDetail", productRutas)
+app.use("/productos", productRutas)
+
+app.use("/ayuda", usersRutas)
+app.use("/register", usersRutas)
+app.use("/login", usersRutas)
+app.use("/restablecer", usersRutas)
+/* app.get("/", (req,res) => {
     res.sendFile(path.resolve(__dirname,"./views/index.html"))
 })
 
@@ -38,4 +50,8 @@ app.get("/login", (req,res) => {
 })
 app.get("/productCart", (req,res) => {
     res.sendFile(path.resolve(__dirname,"./views/productCart.html"))
-})
+}) */
+
+app.set("view engine", "ejs")
+
+app.set("views","views")
