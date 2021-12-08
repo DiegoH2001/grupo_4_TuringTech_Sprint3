@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-<!-- HEAD-->
-<%- include("../partials/head.ejs") %> 
-<!-- FIN HEAD-->
+  <!-- HEAD-->
+  <%- include("../partials/head.ejs") %>
+  <!-- FIN HEAD-->
 
-
-<body>
-
-
+  <body>
     <!-- HEADER + NAVBAR + LOGO -->
-    <%- include("../partials/header.ejs") %> 
+    <%- include("../partials/header.ejs") %>
     <!-- FIN  HEADER + NAVBAR + LOGO -->
 
-    
-
-    <main class="main__container">
+    <main class="main__container_productEdit">
       <div class="encabezado"><h1>Editar producto</h1></div>
       <div class="desplegable1">
         <span class="orden">Categoria</span>
@@ -34,7 +29,7 @@
           <option value="lowprice">Intel</option>
         </select>
       </div>
-      <div class="nombres">
+      <div class="name_product">
         <p>Nombre del producto</p>
         <input type="text" name="ingreso" id="ingreso" placeholder=" " />
         <p>Descripción</p>
@@ -51,7 +46,7 @@
     </main>
 
     <!-- footer-->
-    <%- include("../partials/footer.ejs") %> 
+    <%- include("../partials/footer.ejs") %>
     <!-- fin footer-->
   </body>
 </html>

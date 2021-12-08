@@ -292,7 +292,7 @@
 }
 /*productEdit*/
 
-.main__container {
+.main__container_productEdit {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -330,7 +330,7 @@ body {
   color: white;
 }
 
-.nombres {
+.name_product {
   text-align: center;
   width: 1000px;
   height: 300px;
