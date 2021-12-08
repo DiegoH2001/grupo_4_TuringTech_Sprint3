@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- HEAD-->
+<%- include("../partials/head.ejs") %> 
+<!-- FIN HEAD-->
+
+
+<body>
+
+
+    <!-- HEADER + NAVBAR + LOGO -->
+    <%- include("../partials/header.ejs") %> 
+    <!-- FIN  HEADER + NAVBAR + LOGO -->
+
+    
+
+    <main class="main__container">
+      <div class="encabezado"><h1>Editar producto</h1></div>
+      <div class="desplegable1">
+        <span class="orden">Categoria</span>
+        <select name="ordenado" id="ordenado">
+          <option value="amazing">-Selecione una cagetoria-</option>
+          <option value="amazing">Pc</option>
+          <option value="highprice">Monitores</option>
+          <option value="lowprice">Procesadores</option>
+        </select>
+      </div>
+      <div class="desplegable2">
+        <span class="orden">Marcas</span>
+        <select name="ordenado" id="ordenado">
+          <option value="amazing">-Selecione una cagetoria-</option>
+          <option value="amazing">Ryzen</option>
+          <option value="highprice">Radeon</option>
+          <option value="lowprice">Intel</option>
+        </select>
+      </div>
+      <div class="nombres">
+        <p>Nombre del producto</p>
+        <input type="text" name="ingreso" id="ingreso" placeholder=" " />
+        <p>Descripción</p>
+        <input type="text" name="ingreso" id="ingreso" placeholder=" " />
+        <p>Descripción amplia</p>
+        <input type="text" name="ingreso" id="ingreso" placeholder=" " />
+        <p>Precio</p>
+        <input type="text" name="ingreso" id="ingreso" placeholder=" " />
+        <p>Stock minimo</p>
+        <input type="text" name="ingreso" id="ingreso" placeholder=" " />
+        <p>Stock máximo</p>
+        <input type="text" name="ingreso" id="ingreso" placeholder="" />
+      </div>
+    </main>
+
+    <!-- footer-->
+    <%- include("../partials/footer.ejs") %> 
+    <!-- fin footer-->
+  </body>
+</html>
