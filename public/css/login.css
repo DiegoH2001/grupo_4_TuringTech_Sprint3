@@ -11,7 +11,7 @@
 }
 
 .contenedor-sesion {
-  background-color: var(--marfil-tierra);
+  background-color: var(--rojo-fuego);
   height: 250px;
   width: 500px;
   display: flex;
@@ -22,7 +22,7 @@
 }
 
 .contenedor-facebook-google {
-  background-color: var(--marfil-tierra);
+  background-color: var(--rojo-fuego);
   height: 250px;
   width: 500px;
   display: flex;
@@ -33,7 +33,7 @@
 }
 
 .main__container-google button {
-  background-color: var(--blanco-agua);
+  
   margin-top: 10px;
   border: 1px solid var(--negro-intenso);
   width: 300px;
@@ -86,11 +86,11 @@
 }
 
 .boton-iniciar {
-  background-color: var(--azul-viento);
-  margin-top: 10px;
-  border-radius: 5px;
-  width: 75px;
-  height: 30x;
+  background-color: rgba(0, 0, 0, 0.445);
+  color: var(--blanco-agua);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
   border: 1px solid var(--negro-intenso);
   font-size: 2.5rem;
 }
@@ -101,6 +101,11 @@ h1 {
 
 a {
   font-size: 2.5rem;
+  color: var(--blanco-agua);
+}
+
+.registrate{
+  
 }
 
 /*Tablet - netbook*/

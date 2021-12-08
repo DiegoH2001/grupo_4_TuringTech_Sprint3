@@ -1,4 +1,4 @@
-.contenedorCart{
+.containerproductos{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,13 +6,13 @@
 
 
 .container{
-    background-color: var(--marfil-agua);
-    height: 90%;
-    width: 90vw;
+    background-color: var(--rojo-fuego);
+    width: 80%;
     border-radius: 5%;
     border: 1px solid var(--negro-intenso);
     display: flex;
     justify-content: space-around;
+    margin: 5rem;
     
 }
 
@@ -45,7 +45,7 @@
 .cont-menu .cont-enlace .opcion{
     display: flex;
     justify-content: space-between;
-    background-color: var(--violeta-fuego);
+    background-color: rgba(0, 0, 0, 0.445);
     color: var(--marfil-agua);
     padding: 1.3rem 1rem;
     cursor: pointer;
@@ -58,7 +58,7 @@
 }
 
 .cont-menu .cont-enlace .opcion .icono{
-    background-color: var(--marfil-tierra);
+    background-color: var(--rojo-fuego);
     color: var(--violeta-fuego);
     font-weight: bold;
     font-size: 2.2rem;
@@ -79,11 +79,10 @@
     color: var(--blanco-agua);
 }
 
-.orden{
-    margin-left: -10%;
-    font-size: 1.5rem;
-    background-color: var(--marfil-agua);
-    
+.orden-productos{
+    margin: 0px 40px 0 0;
+    font-size: 2.5rem;
+    font-weight: 900;
 }
 
 .orden select{
@@ -93,17 +92,20 @@
 
 
 .destacadosorden{
-    background-color: var(--blanco-agua);
-    width: 10%;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .product1, .product2, .product3, .product4, .product5{
-    height: 12rem;
+    height: 15rem;
     width: 60rem;
-    background-color: var(--violeta-fuego);
+    background-color: transparent;
     margin: 50px;
     border-radius: 10px;
     border: 3px solid var(--negro-intenso);
+    background-color: rgba(0, 0, 0, 0.445);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -119,29 +121,27 @@
     color: var(--marfil-agua);
 }
 
-.boton input{
+.boton-productos input{
     border-radius: 5px;
     height: 3.5rem;
     width: 15rem;
     margin: 1rem;
-    color: var(--negro-intenso);
-    background-color: var(--blanco-agua);
+    color: var(--blanco-agua);
+    background-color: var(--rojo-fuego);
     border: 1px solid var(--negro-intenso);
     font-weight: bold;
     cursor: pointer;
 }
 
-.boton input:hover{
+.boton-productos input:hover{
     border-radius: 5px;
     height: 2.5rem;
     width: 13rem;
     margin: 1rem;
-    color: var(--blanco-agua);
-    background-color: var(--azul-viento);
-    border: 1px solid var(--negro-intenso);
+
 }
 
-.boton input{
+.boton-productos input{
     transition: color 0.2s linear 0.2s;
     transition: height 0.2s linear 0.2s;
     transition: width 0.2s linear 0.2s;

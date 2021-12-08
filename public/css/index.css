@@ -93,10 +93,10 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    height: 33rem;
+    height: 35rem;
 }
 
-.product1, .product2, .product3{
+.product1-inidex, .product2-inidex, .product3-inidex{
     background-color: var(--rojo-fuego);
     border-radius: 3rem;
     border: 3px solid black;
@@ -152,6 +152,14 @@
 
     iframe{
         width: 15rem;
+    }
+
+    .product1-inidex, .product2-inidex, .product3-inidex{
+        height: 40%;
+    }
+    
+    .products{
+        height: 25rem;
     }
 
 }
