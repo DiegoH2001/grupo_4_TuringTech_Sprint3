@@ -294,11 +294,13 @@
 
 .main__container_productEdit {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
   flex-direction: column;
   height: 100vh;
   margin-bottom: 5rem;
+  flex-wrap: wrap;
+  align-content: flex-end;
 }
 
 body {
@@ -312,10 +314,13 @@ body {
   color: white;
 }
 
+.orden {
+  margin-left: 1000px;
+}
 .desplegable1 {
   text-align: center;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   color: white;
@@ -324,7 +329,7 @@ body {
 .desplegable2 {
   text-align: center;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   color: white;
@@ -336,7 +341,10 @@ body {
   height: 300px;
   font-size: 1rem;
   color: white;
-  justify-content: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 p {
