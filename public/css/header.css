@@ -1,0 +1,135 @@
+.header__container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--negro-intenso);
+    padding:0.5rem 1rem;
+}
+
+#header__logo{
+    margin-top:0.9rem;
+    width:16rem;
+}
+
+.header__form{
+    display: flex;
+    align-items: center;
+}
+
+.header__search{
+    width:575px;
+    height:5rem;
+    margin:0 1.5rem 0 0;
+    font-size: 2.5rem;
+    border-radius: 3px;
+}
+
+.header__lupa{
+    background-color: transparent;
+    width:1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.header__lupa img{
+    width: 4.5rem;
+}
+
+.header__lupa:hover{
+    filter: invert(62%) sepia(38%) saturate(2978%) hue-rotate(266deg) brightness(107%) contrast(101%);
+}
+
+.header__container-user-car{
+    display: flex;
+    justify-content: space-evenly;
+    width:12.5rem;
+}
+
+#header__user{
+    width:5rem;
+}
+
+#header__user:hover{
+    cursor:pointer;
+    filter: invert(62%) sepia(38%) saturate(2978%) hue-rotate(266deg) brightness(107%) contrast(101%);
+}
+
+#header__car{
+    width:5rem;
+}
+
+#header__car:hover{
+    cursor:pointer;
+    filter: invert(62%) sepia(38%) saturate(2978%) hue-rotate(266deg) brightness(107%) contrast(101%);
+}
+
+#header__nav{
+    background-color: var(--rojo-fuego);
+}
+
+.nav__ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:7vh;
+}
+
+.nav__li{
+    margin: 0 5%;
+}
+
+.nav__a{
+    font-size: 2.5rem;
+    color:var(--marfil-tierra);
+}
+
+.nav__a:hover{
+    color:var(--violeta-fuego);
+}
+
+
+/*Tablet - netbook*/
+
+@media screen and (min-width:768px) and (max-width:1150px){
+    .header__form{
+        width: 50%;
+    }
+    .header__search{
+        width:100%;
+    }
+    .nav__a{
+        font-size:2rem;
+    }
+}
+
+
+/*móvil*/
+@media screen and (min-width:320px) and (max-width:767px) {
+    #header__logo{
+        width:6rem;
+    }
+    .header__form{
+        width:50%;
+    }
+    .header__search{
+        width:100%;
+        height: 2rem;
+        font-size: 1.5rem;
+    }
+    .header__lupa img{
+        width:2.5rem;
+    }
+    .header__container-user-car{
+        width: 6rem;
+    }
+    #header__user{
+        width:2.5rem;
+    }
+    #header__car{
+        width:2.5rem;
+    }
+    .nav__a{
+        font-size:1.1rem;
+        text-align: center;
+    }
+}
