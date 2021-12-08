@@ -10,6 +10,7 @@ router.get('/productCart', productController.productCart);
 router.get('/productDetail', productController.productDetail);
 router.get('/productos', productController.productos);
 router.get('/productEdit', productController.productEdit);
+router.get('/productAdd', productController.productAdd);
 
 /* Con readDetail - LEE PRODUCTO SEGUN ID */
 //router.get('/detalle/:menuId', productController.readDetail);
