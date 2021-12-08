@@ -83,37 +83,9 @@ h4 {
 
 
 @media screen and (min-width:1300px) {
-    #msi{
-        width: 7%;
-    }
+
+    
 }@media screen and (min-width:320px) and (max-width:768px) {
-    #header__logo{
-        width:6rem;
-    }
-    .header__form{
-        width:50%;
-    }
-    .header__search{
-        width:100%;
-        height: 2rem;
-        font-size: 1.5rem;
-    }
-    .header__lupa img{
-        width:2.5rem;
-    }
-    .header__container-user-car{
-        width: 6rem;
-    }
-    #header__user{
-        width:2.5rem;
-    }
-    #header__car{
-        width:2.5rem;
-    }
-    .nav__a{
-        font-size:1.1rem;
-        text-align: center;
-    }
 
     main{
         padding:2rem;
