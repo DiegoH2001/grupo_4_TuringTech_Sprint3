@@ -1,4 +1,4 @@
-.main{
+.main-productDetail{
     padding:5rem;
 }
 
@@ -276,7 +276,7 @@
 /*móvil*/
 
 @media screen and (min-width:320px) and (max-width:767px) {
-    .main{
+    .main-productDetail{
         padding: 1.5rem;
     }
     .main__product-container{
