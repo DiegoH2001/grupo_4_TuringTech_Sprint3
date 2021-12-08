@@ -149,8 +149,8 @@
 }
 
 .imagen img{
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
 }
 
 /*Tablet - netbook*/
@@ -176,11 +176,15 @@
 
     .destacados{
         width: 85%;
+        display: flex;
+        align-items: center;
     }
 
     .product1, .product2, .product3, .product4, .product5{
-        height: 200px;
+        height: 190px;
+        display: flex;
         width: 20rem;
+        flex-direction: column;
     }
 
     .imagen img{
