@@ -1,4 +1,6 @@
-# Retrospectiva: 
+# Retrospectiva: ![image](https://user-images.githubusercontent.com/91677757/145304567-384e5aa3-71eb-4347-b4a9-14e36bbab6d4.png)
+
+
 
 
 ### Con el equipo nos dimos cuenta de las siguientes actitudes que queremos mantener y otras que debemos mejorar.
