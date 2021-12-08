@@ -10,7 +10,7 @@ const userController = {
     },
     restablecer: (req,res) => {
         res.render("users/restablecer")
-    },
+    }
 }
 
 module.exports = userController;
