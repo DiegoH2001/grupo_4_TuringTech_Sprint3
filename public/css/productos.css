@@ -1,9 +1,7 @@
-main{
-    background-color: var(--blanco-agua);
+.contenedorCart{
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 
