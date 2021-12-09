@@ -33,6 +33,7 @@
     width:1.5rem;
     border: none;
     cursor: pointer;
+    transition: filter 0.3s ease;
 }
 
 .header__lupa img{
@@ -40,7 +41,7 @@
 }
 
 .header__lupa:hover{
-    filter: invert(62%) sepia(38%) saturate(2978%) hue-rotate(266deg) brightness(107%) contrast(101%);
+    filter: drop-shadow(0 0 6px var(--violeta-fuego));
 }
 
 .header__container-user-car{
@@ -51,20 +52,22 @@
 
 #header__user{
     width:5rem;
+    transition:filter 0.3s ease;
 }
 
 #header__user:hover{
     cursor:pointer;
-    filter: invert(62%) sepia(38%) saturate(2978%) hue-rotate(266deg) brightness(107%) contrast(101%);
+    filter: drop-shadow(0 0 6px var(--violeta-fuego));
 }
 
 #header__car{
     width:5rem;
+    transition:filter 0.3s ease;
 }
 
 #header__car:hover{
     cursor:pointer;
-    filter: invert(62%) sepia(38%) saturate(2978%) hue-rotate(266deg) brightness(107%) contrast(101%);
+    filter: drop-shadow(0 0 6px var(--violeta-fuego));
 }
 
 #header__nav{
@@ -85,10 +88,16 @@
 .nav__a{
     font-size: 2.5rem;
     color:var(--marfil-tierra);
+    transition: text-shadow 0.3s ease;
 }
 
 .nav__a:hover{
-    color:var(--violeta-fuego);
+    color:whitesmoke;
+    text-shadow: 0 0 2px var(--violeta-fuego),
+    0 0 4px var(--violeta-fuego),
+    0 0 6px var(--violeta-fuego),
+    0 0 8px var(--violeta-fuego),
+    0 0 12px var(--violeta-fuego);
 }
 
 
