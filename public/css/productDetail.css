@@ -48,6 +48,7 @@
     width:10rem;
     height: 10rem;
     cursor: pointer;
+    transition: filter 0.3s ease;
 }
 
 .main__product-imgs-ryzen:hover{
@@ -140,6 +141,7 @@
     margin:3rem 0;
     cursor: pointer;
     border-radius: 0.5rem;
+    transition: text-shadow 0.3s ease;
 }
 
 #main__product-add-icon{
@@ -148,7 +150,9 @@
 }
 
 .main__product-add-button:hover{
-    color:var(--violeta-fuego);
+    color:var(--blanco-agua);
+    text-shadow: 0 0 2px var(--violeta-fuego),
+                0 0 5px var(--violeta-fuego);
 }
 
 .main__product-specs-container{

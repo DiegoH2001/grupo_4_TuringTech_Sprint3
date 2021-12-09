@@ -133,12 +133,14 @@
         height: 8rem;
         font-size: 4rem;
         margin:2rem auto;
-        color:var(--blanco-agua);
+        transition: text-shadow 0.3s ease;
     }
     
     #main__register-submit:hover{
         cursor: pointer;
-        color:var(--violeta-fuego);
+        color:var(--blanco-agua) !important;
+        text-shadow: 0 0 2px var(--violeta-fuego),
+        0 0 5px var(--violeta-fuego);
     }
 
 /*móvil*/
@@ -275,18 +277,9 @@
     }
     
     #main__register-submit{
-        background-color: var(--negro-intenso-transparente);
-        border:2px solid var(--negro-intenso);
-        border-radius: 5px;
         width:15rem;
         height: 4rem;
         font-size: 2rem;
         margin:2rem auto;
-        color:var(--blanco-agua);
-    }
-    
-    #main__register-submit:hover{
-        cursor: pointer;
-        color:var(--violeta-fuego);
     }
 }

@@ -93,10 +93,10 @@
   height: 3rem;
 }
 
-button p {
+.boton .cart-p {
   color: #0e0b16;
 }
-p {
+.cart-p {
   color: var(--negro-intenso);
 }
 
