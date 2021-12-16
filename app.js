@@ -17,3 +17,4 @@ app.listen(process.env.PORT || 3000, () => {
 app.use("/", productRutas)
 
 app.use("/", usersRutas)
+a
